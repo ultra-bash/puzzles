@@ -1,17 +1,42 @@
 <html>
 	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Ultrabash!</title>
     <style>
+      /* Base layout */
+      body {
+        margin: 0;
+        padding: 16px;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+        line-height: 1.5;
+        font-size: clamp(16px, 2.8vw, 20px);
+      }
+
+      /* Make images responsive */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Allow inline code content to wrap gracefully on small screens */
+      code {
+        white-space: normal;
+        word-break: break-word;
+        display: block;
+      }
+
       .fancy-text {
         background: -webkit-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        font-size: 50px;
+        font-size: clamp(24px, 8vw, 50px);
       }
     </style>
 	</head>
-	<body style="font-size: 200%">
+	<body>
 
 		<code>
 			<b>Coming Soon!</b>
